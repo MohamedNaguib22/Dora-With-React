@@ -1,0 +1,122 @@
+:root {
+  --cf-primary-color: #fd6e0a;
+  --colorFont: #15295f;
+}
+.Feedback {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 60px;
+}
+.Feedback.slick-prev:before {
+  color: #c0bebe;
+  transition: 0.5s all;
+}
+.Feedback.slick-prev:hover::before {
+  color: var(--cf-primary-color);
+}
+.Feedback .slick-next {
+  position: absolute;
+  right: 5%;
+  top: calc(0% - 100px);
+}
+.Feedback .slick-prev {
+  position: absolute;
+  left: 87%;
+  top: calc(0% - 100px);
+}
+.Feedback .slick-next::before,
+.Feedback .slick-prev::before {
+  color: var(--cf-primary-color);
+  font-size: 70px;
+  opacity: 1;
+}
+.Feedback .slick-prev:before {
+  color: #c0bebe;
+  transition: 0.5s all;
+}
+.Feedback .slick-prev:hover::before {
+  color: var(--cf-primary-color);
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .Feedback .ServicesCont2 {
+    font-size: 30px;
+  }
+  .Feedback .slick-next::before,
+  .Feedback .slick-prev::before {
+    font-size: 60px;
+  }
+}
+@media (max-width: 991px) {
+  .Feedback .slick-next::before,
+  .Feedback .slick-prev::before {
+    font-size: 70px;
+  }
+  .Feedback .ServicesCont2 {
+    width: 70%;
+    margin-bottom: 30px;
+  }
+  .Feedback .slick-next {
+    top: calc(0% - 100px);
+    left: 83%;
+  }
+  .Feedback .slick-prev {
+    top: calc(0% - 100px);
+    left: 73%;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .Feedback .slick-next {
+    top: calc(0% - 115px);
+    left: 85%;
+  }
+  .Feedback .slick-prev {
+    top: calc(0% - 115px);
+    left: 71%;
+  }
+}
+@media (max-width: 575px) {
+  .Feedback .slick-next,
+  .Feedback .slick-prev {
+    top: calc(0% - 80px);
+  }
+  .Feedback .slick-next::before,
+  .Feedback .slick-prev::before {
+    font-size: 55px;
+  }
+  .Feedback .slick-next {
+    left: 80%;
+  }
+  .Feedback .slick-prev {
+    left: 68%;
+  }
+}
+.FeedbackContent {
+  margin-bottom: 34px;
+}
+.FeedbackContent h2 {
+  color: var(--colorFont);
+  width: 35%;
+  font-size: 35px;
+  font-weight: 700;
+}
+@media (max-width: 1399px) {
+  .FeedbackContent h2 {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+    .FeedbackContent h2 {
+        font-size: 30px;
+      }
+}
+@media (max-width: 991px) {
+  .FeedbackContent h2 {
+    width: 65%;
+  }
+}
+@media (max-width: 575px) {
+  .FeedbackContent h2 {
+    font-size: 25px;
+  }
+}
+

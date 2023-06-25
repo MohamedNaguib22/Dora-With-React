@@ -1,0 +1,38 @@
+:root {
+    --cf-primary-color:#fd6e0a;
+    --colorFont : #15295f;
+}
+.PortfolioSection {
+    padding: 80px 0;
+}
+.PortfolioSection ul {
+    list-style: none;
+    display: flex;
+    margin: 40px 0;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+.PortfolioSection ul li {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+}
+.PortfolioSection .button {
+    color:var(--colorFont);
+    transition: 0.3s all;
+}
+.PortfolioSection .button:hover {
+    color:var(--cf-primary-color);
+}
+.PortfolioSection .active {
+    color:var(--cf-primary-color);
+}
+@media (max-width : 767px) {
+    .PortfolioSection ul {
+        gap: 20px;
+    }
+    .PortfolioSection ul li {
+        font-size: 16px;
+    }
+}

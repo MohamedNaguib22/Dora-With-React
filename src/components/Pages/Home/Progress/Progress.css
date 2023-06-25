@@ -1,0 +1,21 @@
+:root {
+    --cf-primary-color:#fd6e0a;
+    --colorFont : #15295f;
+}
+.ProgressSection {
+    padding: 80px 0;
+    background-color: #fdf8f7;
+}
+.progress-bar {
+background-color: var(--cf-primary-color);
+}
+.progress {
+    background-color: #d2d0d0;
+    margin-bottom: 20px;
+}
+label {
+    color: var(--colorFont);
+    font-size: 22px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}

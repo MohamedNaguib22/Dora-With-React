@@ -1,0 +1,51 @@
+:root {
+    --colorFont : #15295f;
+    --cf-text-gray : #6f6b80;
+    --white-Color :#fff ;
+}
+.CardOne {
+    background-color: #fff;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 35px 25px;
+    border-radius: 8px;
+    margin-left: 25px;
+}
+@media (max-width:992px) {
+    .CardOne {
+        padding: 40px 20px;
+    }
+}
+.CardOne .AllIcons {
+    font-size: 55px;
+    color: var(--white-Color);
+    width: 100px;
+    height: 100px ;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.CardOne h2 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 31px;
+    color: var(--colorFont);
+    margin: 20px 0 15px;
+}
+.CardOne p {
+    font-weight: 600;
+    color: var(--cf-text-gray);
+    font-size: 16px;
+    line-height: 1.8;
+}
+.CardOne .IconOne {
+    background-color: #FFAF00;
+}
+.CardOne .IconTwo {
+    background-color: #9C19C9;
+}
+.CardOne .IconThree {
+    background-color: #FF4E6E;
+}
+.CardOne .IconFour {
+    background-color: #4AC3CA;
+}

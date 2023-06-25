@@ -1,0 +1,103 @@
+:root {
+  --cf-primary-color: #fd6e0a;
+  --colorFont: #15295f;
+}
+.ServicesSection {
+  margin-top: 130px;
+  overflow: hidden;
+  position: relative;
+  padding: 40px 0 80px;
+}
+.ServicesSection .ServicesCont1 {
+  font-size: 23px;
+  color: var(--cf-primary-color);
+  font-weight: 600;
+}
+.ServicesSection .ServicesCont2 {
+  font-size: 35px;
+  color: var(--colorFont);
+  font-weight: 700;
+}
+.ServicesSection .slick-next {
+  position: absolute;
+  left: calc(0% - 200px);
+  top: 60%;
+  transform: translate(-50%);
+}
+.ServicesSection .slick-prev {
+  position: absolute;
+  left: calc(0% - 280px);
+  top: 60%;
+  transform: translate(-50%);
+}
+.ServicesSection .slick-next::before,
+.ServicesSection .slick-prev::before {
+  color: var(--cf-primary-color);
+  font-size: 80px;
+  opacity: 1;
+}
+.ServicesSection .slick-prev:before {
+  color: #c0bebe;
+  transition: 0.5s all;
+}
+.ServicesSection .slick-prev:hover::before {
+  color: var(--cf-primary-color);
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .ServicesSection .ServicesCont2 {
+    font-size: 30px;
+  }
+  .ServicesSection .slick-next {
+    top: 55%;
+    left: calc(0% - 160px);
+  }
+  .ServicesSection .slick-prev {
+    top: 55%;
+    left: calc(0% - 230px);
+  }
+  .ServicesSection .slick-next::before,
+  .ServicesSection .slick-prev::before {
+    font-size: 60px;
+  }
+}
+@media (max-width: 991px) {
+  .ServicesSection .slick-next::before,
+  .ServicesSection .slick-prev::before {
+    font-size: 70px;
+  }
+    .ServicesSection .ServicesCont2 {
+        width: 70%;
+        margin-bottom: 30px;
+      }
+      .ServicesSection .slick-next {
+        top: calc(0% - 100px);
+        left: 85%;
+      }
+      .ServicesSection .slick-prev {
+        top: calc(0% - 100px);
+        left: 72%;
+      }
+
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .ServicesSection .slick-next {
+        top: calc(0% - 97px);
+        left: 85%;
+      }
+      .ServicesSection .slick-prev {
+        top: calc(0% - 97px);
+        left: 71%;
+      }
+}
+@media (max-width: 531px) {
+  .ServicesSection .slick-next,
+  .ServicesSection .slick-prev {
+        top: calc(0% - 120px);
+      }
+      .ServicesSection .slick-next {
+        left: 74%;
+      }
+      .ServicesSection .slick-prev {
+        left: 60%;
+      }
+}

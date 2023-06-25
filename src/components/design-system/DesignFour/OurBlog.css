@@ -1,0 +1,57 @@
+:root {
+  --cf-primary-color: #fd6e0a;
+}
+.Cat {
+  position: relative;
+  cursor: pointer;
+}
+@media (max-width : 991px) {
+  .Cat {
+    margin-bottom: 40px;
+  }
+}
+.Cat .imgBlog {
+  overflow: hidden;
+  max-width: 100%;
+  height: 300px;
+}
+.Cat img {
+  max-width: 100%;
+  height: 100%;
+  transition: 0.5s all;
+}
+@media (max-width : 767px) {
+  .Cat {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .Cat .CatImg {
+    width: 100%;
+  }
+  .Cat img {
+    height: auto;
+  }
+}
+.Cat img:hover {
+  transform: scale(1.2) rotate(8deg);
+  filter: brightness(70%);
+}
+.Cat .CatP {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #1f1d2b;
+  color: #fff;
+  padding: 8px 15px;
+  font-weight: 700;
+}
+.Cat .Title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--cf-primary-color);
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+.Cat h4 {
+  color: #fff;
+}

@@ -1,0 +1,17 @@
+:root {
+    --cf-primary-color: #fd6e0a;
+    --colorFont : #15295f;
+}
+.Footer {
+    padding: 40px 0;
+    background-color: #fdf8f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: var(--colorFont) ;
+}
+.Footer a {
+    color: var(--cf-primary-color);
+    margin: 0 5px;
+}

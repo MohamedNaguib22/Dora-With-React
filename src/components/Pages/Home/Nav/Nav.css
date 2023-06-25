@@ -1,0 +1,45 @@
+:root {
+    --cf-primary-color: #fd6e0a;
+    --colorFont : #15295f;
+}
+.NavBar {
+    box-shadow: 2px 2px 5px 0px #7b79794d;
+}
+.NavbarScroll {
+    background-color: #fff;
+    box-shadow: 2px 2px 5px 0px #7b79794d;
+    transition: 0.3s all;
+    height: 70px;
+}
+.transparent {
+    background-color: transparent;
+    box-shadow: none;
+    height: 95px;
+    transition: 0.3s all;
+}
+.NavBarLinks {
+    color: var(--colorFont) !important;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+@media (max-width:991px) {
+    .Droop {
+        background-color: #fff;
+       
+    }
+    .NavBarLinks {
+        transition: .5s all;
+    }
+    .NavBarLinks:hover {
+        padding-left: 15px ;
+    }
+}
+.NavBarLinks:hover,
+.nav-link:hover,
+.NavBar .Active {
+    color: var(--cf-primary-color) !important;
+}
+.nav-link {
+    color: var(--colorFont) !important;
+}

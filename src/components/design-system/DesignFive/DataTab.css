@@ -1,0 +1,60 @@
+.AmazingSection {
+    position: relative;
+}
+.AmazingSection img {
+    transition: 0.5s all;
+}
+.AmazingSection img:hover {
+    transform: scale(1.2) rotate(4deg);
+}
+.img-Grid {
+    transition: 0.5s all;
+}
+.ImgGrid1,
+.ImgGrid2 {
+    margin-top: -120px;
+}
+.ImgGrid {
+    margin-top: 33px;
+}
+@media only screen and (min-width:992px) and (max-width:1199px) {
+    .ImgGrid1,
+    .ImgGrid2 {
+        margin-top: -80px;
+    }
+}
+@media (max-width :991px) {
+    .ImgGrid {
+        margin-top: -105px;
+    }
+    .ImgGrid2 {
+        margin-top: -110px;
+    }
+    .ImgGrid3 {
+        margin-top: 25px
+    }
+    .ImgGrid1 {
+        margin-top: 25px;
+    }
+}
+@media(max-width:767px) {
+    .AmazingSection {
+        margin: 0 auto;
+        width: 50%;
+    }
+    .ImgGrid {
+        margin-top: 0px;
+    }
+    .ImgGrid2 {
+        margin-top: 0px;
+    }
+    .ImgGrid3 {
+        margin-top: 0px
+    }
+    .ImgGrid1 {
+        margin-top: 0px;
+    }
+    .AmazingSection img {
+        margin-bottom: 20px;
+    }
+}

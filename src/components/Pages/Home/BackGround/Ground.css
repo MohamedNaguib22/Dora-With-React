@@ -1,0 +1,113 @@
+:root {
+    --cf-primary-color:#fd6e0a;
+    --colorFont : #15295f;
+    --white-Color :#fff ;
+    --cf-text-gray : #6f6b80;
+}
+a {
+    text-decoration: none;
+}
+.HardySection {
+    background-color: #fdf8f7;
+    padding-top: 140px;
+    position: relative;
+    height: 730px;  
+    overflow: hidden;
+    width: 100%;
+}
+.HardySection .HardyImg {
+    max-width: 50%;
+}
+.HardySection .HardyImg img {
+    height: 100%;
+    width: 100%;
+}
+.HardySection .Content {
+    position: absolute;
+    width: 550px;
+    top: 65%;
+    transform: translateY(-50%);
+}
+.HardySection .Content .ContentHi {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--cf-primary-color);
+    margin-bottom: -11px;
+}
+.HardySection .Content .ContentHardy {
+    color: var(--colorFont);
+    font-size: 80px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.HardySection .Content .ContentDigital {
+    color: var(--colorFont);
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+.HardySection .Content .ContentShot {
+    color: var(--cf-text-gray);
+    font-weight: 500;
+    margin-bottom: 55px;
+    font-size: 18px;
+}
+.HardySection .Content .BtnOne {
+    padding: 15px 40px;
+    background-color: var(--cf-primary-color);
+    border: none;
+    border-radius: 35px;
+    transition: 0.5s all;
+}
+.HardySection .Content .BtnTwo {
+    padding: 12px 50px;
+    margin-left: -45px;
+    background-color:var(--white-Color);
+    border: 2px solid var(--cf-primary-color);
+    border-radius: 35px;
+    transition: 0.5s all;
+}
+.HardySection .Content .BtnOne:hover {
+    background-color:var(--white-Color);
+    border: 2px solid var(--cf-primary-color);
+}
+.HardySection .Content .BtnOne:hover a {
+    color:var(--cf-primary-color);
+}
+.HardySection .Content .BtnTwo:hover {
+    background-color: var(--cf-primary-color);
+}
+.HardySection .Content .BtnTwo:hover a {
+    color: var(--white-Color);
+}
+.HardySection .Content .BtnOne a {
+    color: var(--white-Color);
+}
+.HardySection .Content .BtnTwo a {
+    color:var(--cf-primary-color);
+}
+@media (max-width :991px ) {
+    .HardySection .HardyImg {
+        display: none;
+    }
+    .HardySection .ContentShot {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .HardySection .Content {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .HardySection .container-fluid {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .HardySection .Content .BtnOne {
+        padding: 15px 30px;
+    }
+    .HardySection .Content .BtnTwo {
+        margin-left: 10px;
+    }
+}
